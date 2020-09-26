@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Frond-End O-Teach</title>
+    </head>
+
+    <body>
+        <div class="container">
+
+            <!-- Navbar section -->
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"> <img class="logo" src="images/logo-1.png" width="130px" alt=""></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li> <a href="index.html">HOME</a></li>
+                        <li> <a href="courses.html">COURSES</a></li>
+                        <li> <a href="about.html">ABOUT</a></li>
+                        <li> <a href="contact.html">CONTACT</a></li>
+                        <li> <a href="account.html"> ACCOUNT</a></li>
+                    </ul>
+                </nav>
+                <a href=""><img src="images/shop.png" height="30px" width="30px" alt=""></a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+
+            </div>
+            <!-- End navbar section -->
+
+        </div>
+        <!-- Account section -->
+        <div class="account-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <a href="index.html"> <img src="images/front.png" alt=""></a>
+                    </div>
+
+                    <div class="col-2">
+                        <div class="form-container">
+                            <div class="form-btn">
+                                <span onclick="sign_in()">Sign in</span>
+                                <span onclick="sign_up()">Sign up</span>
+                                <hr id="active_">
+                            </div>
+                            <form action="" id="signin">
+                                <input type="text" placeholder="Your name">
+                                <input type="password" placeholder="password">
+                                <button type="submit" class="btn">Sign in</button>
+                                <a href="">Forgot password</a>
+                            </form>
+                            <form action="" id="signup">
+                                <input type="text" placeholder="Your name">
+                                <input type="email" placeholder="Email">
+                                <input type="password" placeholder="Password">
+                                <input type="password" placeholder="Confirm password">
+                                <button type="submit" class="btn">Sign in</button>
+
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+
+                    <div class="footer-col-0">
+                        <h3>Contact</h3>
+                        <a href="mailto:contact@frond-end-o-teach.no">contact@frond-end-o-teach.no</a>
+
+                    </div>
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Download App for iOS and Android mobile phone.</p>
+                        <div class="app-logo">
+                            <img class="play-store" src="images/play-store.png" alt="">
+                            <br>
+                            <img class="app-store" src="images/app-store.png" alt="">
+
+                        </div>
+                    </div>
+
+                    <div class="footer-col-2">
+                        <h3>Our policy &cookies </h3>
+                        <ul>
+                            <li>Privacy policy</li>
+                            <li>Cookies</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Instagram</li>
+                            <li>Facebook</li>
+                            <li>Youtube</li>
+                            <li>Snapchat</li>
+                        </ul>
+
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">&copy; 2020 - Frond-End O-tech</p>
+            </div>
+        </div>
+
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+            MenuItems.style.maxHeight = "0px";
+            function menutoggle() {
+                if (MenuItems.style.maxHeight == "0px") {
+                    MenuItems.style.maxHeight = "200px";
+
+
+                } else {
+                    MenuItems.style.maxHeight = "0px";
+                }
+
+            }
+
+            // Toggle form
+            var signin = document.getElementById("signin");
+            var signup = document.getElementById("signup");
+            var active_ = document.getElementById("active_");
+
+            function sign_up() {
+                signup.style.transform = "translateX(0px)";
+                signin.style.transform = "translateX(0px)";
+                active_.style.transform = "translateX(125px)";
+            }
+            function sign_in() {
+                signup.style.transform = "translateX(300px)";
+                signin.style.transform = "translateX(300px)";
+                active_.style.transform = "translateX(20px)";
+
+            }
+        </script>
+    </body>
+
+</html>

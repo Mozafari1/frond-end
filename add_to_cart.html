@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Frond-End O-Teach</title>
+    </head>
+
+    <body>
+        <div class="container">
+
+            <!-- Navbar section -->
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"> <img class="logo" src="images/logo-1.png" width="130px" alt=""></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li> <a href="index.html">HOME</a></li>
+                        <li> <a href="courses.html">COURSES</a></li>
+                        <li> <a href="about.html">ABOUT</a></li>
+                        <li> <a href="contact.html">CONTACT</a></li>
+                        <li> <a href="account.html"> ACCOUNT</a></li>
+                    </ul>
+                </nav>
+                <a href=""><img src="images/shop.png" height="30px" width="30px" alt=""></a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+
+            </div>
+            <!-- End navbar section -->
+
+        </div>
+
+        <!-- Cart items detail -->
+        <div class="tiny-container cart-item">
+            <table>
+
+                <tr>
+                    <th>Course </th>
+                    <th>Name</th>
+
+                    <th>Delete Course</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <a href="course_detail.html"><img src="images/python.png"></a>
+                        </div>
+                    </td>
+                    <td>Python for Data Science</td>
+
+                    <td><a href="">Remove</a></td>
+                    <td>$40.00</td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <a href="course_detail.html"> <img src="images/c++.png"></a>
+                        </div>
+                    </td>
+                    <td>Python for Data Science</td>
+
+                    <td><a href="">Remove</a></td>
+                    <td>$60.00</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="cart-info">
+                            <a href="course_detail.html"><img src="images/java.png"></a>
+                        </div>
+                    </td>
+                    <td>Python for Data Science</td>
+
+                    <td><a href="">Remove</a></td>
+                    <td>$50.00</td>
+                </tr>
+
+            </table>
+            <div class="total_price">
+                <table>
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>$100.00</td>
+                    </tr>
+                    <tr>
+                        <td>Tax</td>
+                        <td>$20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>$120.00</td>
+                    </tr>
+                </table>
+
+
+            </div>
+            <a href="payment.html" class="btn">Proceed to checkout</a>
+        </div>
+        .
+        <!-- Footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+
+                    <div class="footer-col-0">
+                        <h3>Contact</h3>
+                        <a href="mailto:contact@frond-end-o-teach.no">contact@frond-end-o-teach.no</a>
+
+                    </div>
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Download App for iOS and Android mobile phone.</p>
+                        <div class="app-logo">
+                            <img class="play-store" src="images/play-store.png" alt="">
+                            <br>
+                            <img class="app-store" src="images/app-store.png" alt="">
+
+                        </div>
+                    </div>
+
+                    <div class="footer-col-2">
+                        <h3>Our policy &cookies </h3>
+                        <ul>
+                            <li>Privacy policy</li>
+                            <li>Cookies</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Instagram</li>
+                            <li>Facebook</li>
+                            <li>Youtube</li>
+                            <li>Snapchat</li>
+                        </ul>
+
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">&copy; 2020 - Frond-End O-tech</p>
+            </div>
+        </div>
+
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+            MenuItems.style.maxHeight = "0px";
+            function menutoggle() {
+                if (MenuItems.style.maxHeight == "0px") {
+                    MenuItems.style.maxHeight = "200px";
+
+
+                } else {
+                    MenuItems.style.maxHeight = "0px";
+                }
+
+            }
+        </script>
+    </body>
+
+</html>
