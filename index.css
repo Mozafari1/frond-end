@@ -24,6 +24,25 @@ nav ul li {
     display: inline-block;
     margin-right: 20px;
 }
+.search {
+    margin-right: 20px;
+    color: #7e7e7e;
+    width: 100px;
+    box-sizing: border-box;
+    border: 1px solid #e78200;
+    border-radius: 5%;
+    font-size: 14px;
+    padding: 6px 10px 6px 20px;
+    -webkit-transition: width 0.6s ease-in-out;
+    transition: width 0.6s ease-in-out;
+  }
+  
+ 
+  .search:focus {
+    width: 62.5%;
+    color: #7e7e7e;
+    border: 1px solid #e78200;
+  }
 /* circle color: #7e7e7e */
 /* logo color: #e78200 */
 a {
@@ -106,6 +125,7 @@ h2{
 .tiny-container {
     max-width: 1080px;
     margin:auto ;
+    padding: 10px;
 
 }
 .col-4{
@@ -114,6 +134,14 @@ padding: 10px;
 min-width: 200px;
 margin-bottom: 50px;
 transition: transform 0.6s;
+
+}
+
+h6{
+    
+    font-size: 16px;
+    font-weight: lighter;
+    color: #7e7e7e;
 }
 .col-4 img {
     width: 100%;
@@ -146,7 +174,7 @@ i{
 .col-s3{
     flex-basis: 33%;
     padding: 10px;
-    min-width: 200px;
+    min-width: 300px;
     margin-bottom: 50px;
     transition: transform 0.6s;
     }
@@ -200,7 +228,7 @@ small {
 
 .teacher{
     padding-top: 100px;
-    
+    padding: 20px;
 }
 
 .teacher .col-4 {
@@ -575,12 +603,12 @@ form a{
 
 }
 .contact-form{
-    background: white;
+    background: #FBFBFB;
     width: 300px;
     height: 420px;
     position: relative;
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
     margin: auto;
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1); 
 }
@@ -632,7 +660,13 @@ h4{
     color: #7e7e7e;
 }
 
-
+  .icon {
+    padding: 10px;
+    background: #7e7e7e;
+    color: #e78200;
+    min-width: 30px;
+    text-align: center;
+  }
 
 
 @media only screen and (max-width: 800px){
@@ -704,6 +738,23 @@ h4{
         font-size: 22px;
         line-height: 26px;
     }
+    .categories .tiny-container .row .col-3 a img{
+        
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+.about{
+    width: 100%;
+}
+.contact-section{
+    width: 300px;
+}
+.account-section{
+    width: 300px;
+}
+
+
+
 
 }
 
