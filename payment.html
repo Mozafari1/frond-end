@@ -38,78 +38,43 @@
             <!-- End navbar section -->
 
         </div>
+        <!-- payment  section -->
+        <div class="checkout-wrapper">
+            <div class="payment-checkout">
+                <div class="course-inf">
+                    <img src="images/boost.png">
+                    <div class="content">
+                        <h3>Boost Your Career</h3>
+                        <p>$60.00</p>
+                    </div>
+                </div>
+                <div class="checkout-pay-form">
+                    <p>Payment Process</p>
+                    <div class="more-detials">
 
-        <!-- Cart items detail -->
-        <div class="tiny-container cart-item">
-            <table>
-
-                <tr>
-                    <th>Course </th>
-                    <th>Name</th>
-
-                    <th> Remove Course</th>
-                    <th>Price</th>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="cart-info">
-                            <a href="course_detail.html"><img src="images/python.png"></a>
+                        <div class="section"> <input type="text" placeholder="Name on Card"></div>
+                        <div class="section"><input type="text" placeholder="Credit card number"></div>
+                        <div class="section last-section">
+                            <div class="item"> <input type="text" placeholder="Exp Year"></div>
+                            <div class="item"> <input type="text" placeholder="CVV"></div>
                         </div>
-                    </td>
-                    <td>Python for Data Science</td>
-
-                    <td><a href=""><i class="fa fa-trash-o" aria-hidden="true"></i>
-                        </a></td>
-                    <td>$40.00</td>
-
-                </tr>
-                <tr>
-                    <td>
-                        <div class="cart-info">
-                            <a href="course_detail.html"> <img src="images/c++.png"></a>
+                        <div class="checkout-btn">
+                            <a href="">PROCESS</a>
                         </div>
-                    </td>
-                    <td>Python for Data Science</td>
+                        <div class="section accepted-cards">
+                            <img src="images/visa.png" alt="">
+                            <img src="images/mastercard.png" alt="">
+                            <img src="images/amex.png" alt="">
+                            <img src="images/paypal.png" alt="">
 
-                    <td><a href=""><i class="fa fa-trash-o" aria-hidden="true"></i>
-                        </a></td>
-                    <td>$60.00</td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="cart-info">
-                            <a href="course_detail.html"><img src="images/java.png"></a>
                         </div>
-                    </td>
-                    <td>Python for Data Science</td>
-
-                    <td><a href=""><i class="fa fa-trash-o" aria-hidden="true"></i>
-                        </a></td>
-                    <td>$50.00</td>
-                </tr>
-
-            </table>
-            <div class="total_price">
-                <table>
-                    <tr>
-                        <td>Subtotal</td>
-                        <td>$100.00</td>
-                    </tr>
-                    <tr>
-                        <td>Tax</td>
-                        <td>$20.00</td>
-                    </tr>
-                    <tr>
-                        <td>Total</td>
-                        <td>$120.00</td>
-                    </tr>
-                </table>
+                    </div>
+                </div>
             </div>
-            <a href="account.html" class="btn">Proceed to checkout</a>
         </div>
-
         <!-- Footer -->
-        <div class="footer">
+        <!-- Footer -->
+        <div class="footer" style="margin-top: 650px;">
             <div class="container">
                 <div class="row">
 
@@ -162,6 +127,23 @@
                 } else {
                     MenuItems.style.maxHeight = "0px";
                 }
+
+            }
+
+            // Toggle form
+            var signin = document.getElementById("signin");
+            var signup = document.getElementById("signup");
+            var active_ = document.getElementById("active_");
+
+            function sign_up() {
+                signup.style.transform = "translateX(0px)";
+                signin.style.transform = "translateX(0px)";
+                active_.style.transform = "translateX(125px)";
+            }
+            function sign_in() {
+                signup.style.transform = "translateX(300px)";
+                signin.style.transform = "translateX(300px)";
+                active_.style.transform = "translateX(20px)";
 
             }
         </script>
