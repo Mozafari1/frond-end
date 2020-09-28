@@ -609,7 +609,7 @@ h4{
     color: #7e7e7e;
 }
 
-  .icon {
+.icon {
     padding: 10px;
     background: #7e7e7e;
     color: #e78200;
@@ -620,7 +620,7 @@ h4{
 /* Payment section */
 .checkout-wrapper{
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 500px;
@@ -715,7 +715,7 @@ background: red;
 /* Footer */
 
 .footer{
-    margin-top: 80px;
+    
      background:#7e7e7e;
      color: #e78200;
      font-size: 14px;
@@ -875,4 +875,89 @@ background: red;
 }
 
 }
+@media only screen and (max-width: 480px){
+    .row{
+       
+        align-items: center;
+       
+    }
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
+    .course_detail .row{
+        text-align: left;
+        padding: 20px;
+    }
+    .course_detail .col-2{
+        padding: 20px 0;
+    }
+    .course_detail h1{
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .course_detail h2{
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .course_detail .btn, .btn-detail{
+        margin: 8px;
+    }
+    .account-section{
+        padding-right: 30px;
+    }
+    .contact-section{
+        padding-right: 30px;
+    }
+    .contact-section h2{
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .container h1{
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .tiny-container h2{
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .categories .tiny-container .row .col-3 a img{
+        
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+.about{
+    width: 100%;
+}
+.contact-section{
+    width: 300px;
+}
+.account-section{
+    width: 300px;
+}.checkout-wrapper{
+    width: 300px;
+}.checkout-wrapper .payment-checkout .course-inf{
+    width: 30%;
+}.checkout-wrapper .payment-checkout .course-inf img{
+    width: 110px;
+}
+.checkout-wrapper .payment-checkout .course-inf .content h3{
+    font-size: 12px;
+}
+.checkout-wrapper .payment-checkout .checkout-pay-form{
+    width: 70%;
+}
+.checkout-wrapper .payment-checkout .checkout-pay-form p{
+    font-size: 16px;
+}
+
+.checkout-wrapper .payment-checkout .checkout-pay-form .checkout-btn a{
+    letter-spacing: 1px;
+
+}
+.checkout-wrapper .payment-checkout .checkout-pay-form .section.accepted-cards img{
+   width: 32px;
+}
+
+}
+
 

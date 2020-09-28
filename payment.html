@@ -8,7 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
             rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>Frond-End O-Teach</title>
+        <title>Payment Process</title>
         <link rel="icon" href="images/brow.png">
 
     </head>
@@ -52,11 +52,14 @@
                     <p>Payment Process</p>
                     <div class="more-detials">
 
-                        <div class="section"> <input type="text" placeholder="Name on Card"></div>
-                        <div class="section"><input type="text" placeholder="Credit card number"></div>
+                        <div class="section"> <input type="text" placeholder="Name on Card">
+
+                        </div>
+                        <div class="section"><input type="text" placeholder="Credit card number"
+                                data-mask="0000 0000 0000 0000"></div>
                         <div class="section last-section">
-                            <div class="item"> <input type="text" placeholder="Exp Year"></div>
-                            <div class="item"> <input type="text" placeholder="CVV"></div>
+                            <div class="item"> <input type="text" placeholder="Exp Year" data-mask="00 / 00"></div>
+                            <div class="item"> <input type="text" placeholder="CVV" data-mask="000"></div>
                         </div>
                         <div class="checkout-btn">
                             <a href="">PROCESS</a>
@@ -147,6 +150,8 @@
 
             }
         </script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
     </body>
 
 </html>
